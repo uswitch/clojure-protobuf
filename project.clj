@@ -8,7 +8,7 @@
                  [org.flatland/schematic "0.1.0"]
                  [org.flatland/io "0.3.0"]
                  [ordered-collections "0.4.0"]]
-  :plugins [[lein-protobuf "0.4.1"]]
+  :plugins [[org.pingles/lein-protobuf "0.4.2-SNAPSHOT"]]
   :aliases {"testall" ["with-profile" "dev,default:dev,1.3,default:dev,1.5,default" "test"]}
   :profiles {:1.3 {:dependencies [[org.clojure/clojure "1.3.0"]]}
              :1.5 {:dependencies [[org.clojure/clojure "1.5.0-master-SNAPSHOT"]]}
@@ -18,4 +18,4 @@
                                        :releases {:checksum :fail :update :always}}}
   :checksum-deps true
   :java-source-paths ["src"]
-  :javac-options ["-target" "1.6" "-source" "1.6"])
+  :javac-options ["-source" "1.6" "-target" "1.6"])
