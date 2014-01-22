@@ -1,4 +1,4 @@
-(defproject org.flatland/protobuf "0.8.2-SNAPSHOT"
+(defproject com.uswitch/protobuf "0.8.2-SNAPSHOT"
   :description "Clojure-protobuf provides a clojure interface to Google's protocol buffers."
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
@@ -17,4 +17,5 @@
                                        :snapshots true
                                        :releases {:checksum :fail :update :always}}}
   :checksum-deps true
-  :java-source-paths ["src"])
+  :java-source-paths ["src"]
+  :javac-options ["-target" "1.6" "-source" "1.6"])
